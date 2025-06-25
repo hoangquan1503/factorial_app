@@ -4,7 +4,7 @@ import streamlit as st
 def load_users():
     try:
         if os.path.exists("users.txt"):
-            with open(r"D:\AIO2025\users.txt", "r", encoding = "utf-8") as f:
+            with open("users.txt", "r", encoding = "utf-8") as f:
                 users = [line.strip() for line in f.readlines() if line.strip()]
             return users
         else:
